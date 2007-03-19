@@ -1,0 +1,4 @@
+category: Ruby Devel
+requires: ruby
+sdesc: "Ruby build program with capabilities similar to make"
+ldesc: "A simple ruby build program with capabilities similar to make."

@@ -1,0 +1,68 @@
+rake
+------------------------------------------
+A simple ruby build program with capabilities similar to make.
+
+Runtime requirements:
+  ruby-1.8.3-2
+
+Canonical website:
+  http://rake.rubyforge.org/
+
+Canonical download:
+  http://rubyforge.org/project/showfiles.php?group_id=50
+
+-------------------------------------------
+
+Build instructions:
+  unpack rake-0.7.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./rake-0.7.2-X.cygport all
+
+This will create:
+  /usr/src/rake-0.7.2-X-src.tar.bz2
+  /usr/src/rake-0.7.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/rake
+  /usr/lib/ruby/site_ruby/1.8/rake.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/classic_namespace.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/clean.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/contrib/compositepublisher.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/contrib/ftptools.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/contrib/publisher.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/contrib/rubyforgepublisher.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/contrib/sshpublisher.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/contrib/sys.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/gempackagetask.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/loaders/makefile.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/packagetask.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/rake_test_loader.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/rdoctask.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/ruby182_test_unit_fix.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/runtest.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/tasklib.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/testtask.rb
+  /usr/share/doc/Cygwin/rake-0.7.2.README
+  /usr/share/doc/rake-0.7.2/Changes
+  /usr/share/doc/rake-0.7.2/README
+  /usr/share/doc/rake-0.7.2/TODO
+  /usr/share/man/man1/rake.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.7.2-1 -----
+Version bump, built with cygport.
+
+----- version 0.6.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
