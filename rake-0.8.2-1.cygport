@@ -4,10 +4,16 @@ DESCRIPTION="Ruby make build system"
 HOMEPAGE="http://rake.rubyforge.org/"
 SRC_URI="mirror://rubyforge/${PN}/${P}.tgz"
 
-src_compile() { :; }
+src_compile() {
+	cd ${S}
+	rdoc --ri --op ${B}/.rdoc lib/
+}
 
 src_install() {
 	cd ${S}
 	DESTDIR="${D}" ${RUBY} install.rb || error "install.rb install failed"
 	doman doc/rake.1.gz
+
+	dodir ${RI_SITEDIR}
+	cp -r ${B}/.rdoc/Rake/ ${D}${RI_SITEDIR}
 }
