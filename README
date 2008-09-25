@@ -14,15 +14,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack rake-0.8.2-X-src.tar.bz2
+  unpack rake-0.8.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./rake-0.8.2-X.cygport all
+  cygport ./rake-0.8.3-X.cygport all
 
 This will create:
-  /usr/src/rake-0.8.2-X-src.tar.bz2
-  /usr/src/rake-0.8.2-X.tar.bz2
+  /usr/src/rake-0.8.3-X-src.tar.bz2
+  /usr/src/rake-0.8.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -47,9 +47,9 @@ Files included in the binary package:
   /usr/lib/ruby/site_ruby/1.8/rake/runtest.rb
   /usr/lib/ruby/site_ruby/1.8/rake/tasklib.rb
   /usr/lib/ruby/site_ruby/1.8/rake/testtask.rb
-  /usr/share/doc/rake-0.8.2/Changes
-  /usr/share/doc/rake-0.8.2/README
-  /usr/share/doc/rake-0.8.2/TODO
+  /usr/share/doc/rake-0.8.3/Changes
+  /usr/share/doc/rake-0.8.3/README
+  /usr/share/doc/rake-0.8.3/TODO
   /usr/share/man/man1/rake.1.gz
   /usr/share/ri/1.8/site/Rake/Application/add_import-i.yaml
   /usr/share/ri/1.8/site/Rake/Application/add_loader-i.yaml
@@ -263,7 +263,7 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.8.2-1 -----
+----- version 0.8.3-1 -----
 Version bump.
 
 ----- version 0.7.2-1 -----
