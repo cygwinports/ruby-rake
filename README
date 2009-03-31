@@ -3,7 +3,7 @@ rake
 A simple ruby build program with capabilities similar to make.
 
 Runtime requirements:
-  ruby-1.8.7_p72-2
+  ruby-1.8.7_p72-10
 
 Canonical website:
   http://rake.rubyforge.org/
@@ -14,15 +14,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack rake-0.8.3-X-src.tar.bz2
+  unpack rake-0.8.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./rake-0.8.3-X.cygport all
+  cygport ./rake-0.8.4-X.cygport all
 
 This will create:
-  /usr/src/rake-0.8.3-X-src.tar.bz2
-  /usr/src/rake-0.8.3-X.tar.bz2
+  /usr/src/rake-0.8.4-X-src.tar.bz2
+  /usr/src/rake-0.8.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -43,13 +43,14 @@ Files included in the binary package:
   /usr/lib/ruby/site_ruby/1.8/rake/packagetask.rb
   /usr/lib/ruby/site_ruby/1.8/rake/rake_test_loader.rb
   /usr/lib/ruby/site_ruby/1.8/rake/rdoctask.rb
+  /usr/lib/ruby/site_ruby/1.8/rake/repaired_system.rb
   /usr/lib/ruby/site_ruby/1.8/rake/ruby182_test_unit_fix.rb
   /usr/lib/ruby/site_ruby/1.8/rake/runtest.rb
   /usr/lib/ruby/site_ruby/1.8/rake/tasklib.rb
   /usr/lib/ruby/site_ruby/1.8/rake/testtask.rb
-  /usr/share/doc/rake-0.8.3/Changes
-  /usr/share/doc/rake-0.8.3/README
-  /usr/share/doc/rake-0.8.3/TODO
+  /usr/lib/ruby/site_ruby/1.8/rake/win32.rb
+  /usr/share/doc/rake/README
+  /usr/share/doc/rake/TODO
   /usr/share/man/man1/rake.1.gz
   /usr/share/ri/1.8/site/Rake/Application/add_import-i.yaml
   /usr/share/ri/1.8/site/Rake/Application/add_loader-i.yaml
@@ -177,12 +178,15 @@ Files included in the binary package:
   /usr/share/ri/1.8/site/Rake/PackageTask/tar_gz_file-i.yaml
   /usr/share/ri/1.8/site/Rake/PackageTask/tgz_file-i.yaml
   /usr/share/ri/1.8/site/Rake/PackageTask/zip_file-i.yaml
+  /usr/share/ri/1.8/site/Rake/RDocTask/before_running_rdoc-i.yaml
   /usr/share/ri/1.8/site/Rake/RDocTask/cdesc-RDocTask.yaml
   /usr/share/ri/1.8/site/Rake/RDocTask/define-i.yaml
   /usr/share/ri/1.8/site/Rake/RDocTask/new-c.yaml
   /usr/share/ri/1.8/site/Rake/RDocTask/option_list-i.yaml
   /usr/share/ri/1.8/site/Rake/RDocTask/option_string-i.yaml
   /usr/share/ri/1.8/site/Rake/RDocTask/quote-i.yaml
+  /usr/share/ri/1.8/site/Rake/RepairedSystem/cdesc-RepairedSystem.yaml
+  /usr/share/ri/1.8/site/Rake/RepairedSystem/define_module_function-c.yaml
   /usr/share/ri/1.8/site/Rake/RubyForgePublisher/cdesc-RubyForgePublisher.yaml
   /usr/share/ri/1.8/site/Rake/RubyForgePublisher/new-c.yaml
   /usr/share/ri/1.8/site/Rake/RuleRecursionOverflowError/add_target-i.yaml
@@ -252,25 +256,24 @@ Files included in the binary package:
   /usr/share/ri/1.8/site/Rake/TaskManager/resolve_args-i.yaml
   /usr/share/ri/1.8/site/Rake/TaskManager/synthesize_file_task-i.yaml
   /usr/share/ri/1.8/site/Rake/TaskManager/tasks-i.yaml
+  /usr/share/ri/1.8/site/Rake/TaskManager/tasks_in_scope-i.yaml
   /usr/share/ri/1.8/site/Rake/TestTask/cdesc-TestTask.yaml
   /usr/share/ri/1.8/site/Rake/TestTask/define-i.yaml
   /usr/share/ri/1.8/site/Rake/TestTask/new-c.yaml
   /usr/share/ri/1.8/site/Rake/TestTask/test_files%3d-i.yaml
-  /usr/share/ri/1.8/site/Rake/Win32HomeError/cdesc-Win32HomeError.yaml
+  /usr/share/ri/1.8/site/Rake/Win32/Win32HomeError/cdesc-Win32HomeError.yaml
+  /usr/share/ri/1.8/site/Rake/Win32/cdesc-Win32.yaml
+  /usr/share/ri/1.8/site/Rake/Win32/normalize-c.yaml
+  /usr/share/ri/1.8/site/Rake/Win32/rake_system-c.yaml
+  /usr/share/ri/1.8/site/Rake/Win32/windows%3f-c.yaml
   /usr/share/ri/1.8/site/Rake/cdesc-Rake.yaml
 
 ------------------
 
 Port Notes:
 
------ version 0.8.3-1 -----
-Version bump.
-
------ version 0.7.2-1 -----
-Version bump, built with cygport.
-
------ version 0.6.2-1 -----
-Initial release for Cygwin.
+----- version 0.8.4-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
