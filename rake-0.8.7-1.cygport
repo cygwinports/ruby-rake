@@ -3,6 +3,7 @@ inherit ruby
 DESCRIPTION="Ruby make build system"
 HOMEPAGE="http://rake.rubyforge.org/"
 SRC_URI="mirror://rubyforge/${PN}/${P}.tgz"
+PATCH_URI="0.8.7-install-vendor.patch"
 
 src_compile() {
 	cd ${S}

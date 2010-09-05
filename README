@@ -3,7 +3,7 @@ rake
 A simple ruby build program with capabilities similar to make.
 
 Runtime requirements:
-  ruby-1.8.7_p72-10
+  ruby-1.8.7_p72-2
 
 Canonical website:
   http://rake.rubyforge.org/
@@ -14,263 +14,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack rake-0.8.4-X-src.tar.bz2
+  unpack rake-0.8.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./rake-0.8.4-X.cygport all
+  cygport ./rake-0.8.7-X.cygport all
 
 This will create:
-  /usr/src/rake-0.8.4-X-src.tar.bz2
-  /usr/src/rake-0.8.4-X.tar.bz2
+  /usr/src/rake-0.8.7-X-src.tar.bz2
+  /usr/src/rake-0.8.7-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/rake
-  /usr/lib/ruby/site_ruby/1.8/rake.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/classic_namespace.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/clean.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/contrib/compositepublisher.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/contrib/ftptools.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/contrib/publisher.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/contrib/rubyforgepublisher.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/contrib/sshpublisher.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/contrib/sys.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/gempackagetask.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/loaders/makefile.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/packagetask.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/rake_test_loader.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/rdoctask.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/repaired_system.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/ruby182_test_unit_fix.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/runtest.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/tasklib.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/testtask.rb
-  /usr/lib/ruby/site_ruby/1.8/rake/win32.rb
-  /usr/share/doc/rake/README
-  /usr/share/doc/rake/TODO
-  /usr/share/man/man1/rake.1.gz
-  /usr/share/ri/1.8/site/Rake/Application/add_import-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/add_loader-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/cdesc-Application.yaml
-  /usr/share/ri/1.8/site/Rake/Application/collect_tasks-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/const_warning-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/display_prerequisites-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/display_tasks_and_comments-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/dynamic_width-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/dynamic_width_stty-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/dynamic_width_tput-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/find_rakefile_location-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/handle_options-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/have_rakefile-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/init-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/invoke_task-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/load_imports-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/load_rakefile-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/Application/options-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/parse_task_string-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/rake_require-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/rakefile_location-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/run-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/standard_exception_handling-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/standard_rake_options-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/system_dir-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/terminal_width-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/top_level-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/truncate-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/truncate_output%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/tty_output%3d-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/tty_output%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/unix%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/Application/windows%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/Cloneable/cdesc-Cloneable.yaml
-  /usr/share/ri/1.8/site/Rake/Cloneable/clone-i.yaml
-  /usr/share/ri/1.8/site/Rake/Cloneable/dup-i.yaml
-  /usr/share/ri/1.8/site/Rake/CompositePublisher/add-i.yaml
-  /usr/share/ri/1.8/site/Rake/CompositePublisher/cdesc-CompositePublisher.yaml
-  /usr/share/ri/1.8/site/Rake/CompositePublisher/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/CompositePublisher/upload-i.yaml
-  /usr/share/ri/1.8/site/Rake/DefaultLoader/cdesc-DefaultLoader.yaml
-  /usr/share/ri/1.8/site/Rake/DefaultLoader/load-i.yaml
-  /usr/share/ri/1.8/site/Rake/EarlyTime/%3c%3d%3e-i.yaml
-  /usr/share/ri/1.8/site/Rake/EarlyTime/cdesc-EarlyTime.yaml
-  /usr/share/ri/1.8/site/Rake/EarlyTime/to_s-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileCreationTask/cdesc-FileCreationTask.yaml
-  /usr/share/ri/1.8/site/Rake/FileCreationTask/needed%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileCreationTask/timestamp-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/%2a-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/%3d%3d-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/%5b%5d-c.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/add-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/calculate_exclude_regexp-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/cdesc-FileList.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/clear_exclude-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/egrep-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/exclude%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/exclude-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/existing%21-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/existing-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/ext-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/gsub%21-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/gsub-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/import-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/include-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/is_a%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/kind_of%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/pathmap-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/resolve-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/sub%21-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/sub-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/to_a-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/to_ary-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileList/to_s-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileTask/cdesc-FileTask.yaml
-  /usr/share/ri/1.8/site/Rake/FileTask/needed%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/FileTask/timestamp-i.yaml
-  /usr/share/ri/1.8/site/Rake/FtpFile/cdesc-FtpFile.yaml
-  /usr/share/ri/1.8/site/Rake/FtpFile/date-c.yaml
-  /usr/share/ri/1.8/site/Rake/FtpFile/directory%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/FtpFile/mode-i.yaml
-  /usr/share/ri/1.8/site/Rake/FtpFile/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/FtpFile/path-i.yaml
-  /usr/share/ri/1.8/site/Rake/FtpFile/symlink%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/FtpFile/time-c.yaml
-  /usr/share/ri/1.8/site/Rake/FtpUploader/cdesc-FtpUploader.yaml
-  /usr/share/ri/1.8/site/Rake/FtpUploader/close-i.yaml
-  /usr/share/ri/1.8/site/Rake/FtpUploader/connect-c.yaml
-  /usr/share/ri/1.8/site/Rake/FtpUploader/makedirs-i.yaml
-  /usr/share/ri/1.8/site/Rake/FtpUploader/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/FtpUploader/upload_files-i.yaml
-  /usr/share/ri/1.8/site/Rake/GemPackageTask/cdesc-GemPackageTask.yaml
-  /usr/share/ri/1.8/site/Rake/GemPackageTask/define-i.yaml
-  /usr/share/ri/1.8/site/Rake/GemPackageTask/gem_file-i.yaml
-  /usr/share/ri/1.8/site/Rake/GemPackageTask/init-i.yaml
-  /usr/share/ri/1.8/site/Rake/GemPackageTask/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/InvocationChain/EmptyInvocationChain/append-i.yaml
-  /usr/share/ri/1.8/site/Rake/InvocationChain/EmptyInvocationChain/cdesc-EmptyInvocationChain.yaml
-  /usr/share/ri/1.8/site/Rake/InvocationChain/EmptyInvocationChain/member%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/InvocationChain/EmptyInvocationChain/to_s-i.yaml
-  /usr/share/ri/1.8/site/Rake/InvocationChain/append-c.yaml
-  /usr/share/ri/1.8/site/Rake/InvocationChain/append-i.yaml
-  /usr/share/ri/1.8/site/Rake/InvocationChain/cdesc-InvocationChain.yaml
-  /usr/share/ri/1.8/site/Rake/InvocationChain/member%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/InvocationChain/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/InvocationChain/to_s-i.yaml
-  /usr/share/ri/1.8/site/Rake/MakefileLoader/cdesc-MakefileLoader.yaml
-  /usr/share/ri/1.8/site/Rake/MakefileLoader/load-i.yaml
-  /usr/share/ri/1.8/site/Rake/MultiTask/cdesc-MultiTask.yaml
-  /usr/share/ri/1.8/site/Rake/MultiTask/invoke_prerequisites-i.yaml
-  /usr/share/ri/1.8/site/Rake/NameSpace/%5b%5d-i.yaml
-  /usr/share/ri/1.8/site/Rake/NameSpace/cdesc-NameSpace.yaml
-  /usr/share/ri/1.8/site/Rake/NameSpace/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/NameSpace/tasks-i.yaml
-  /usr/share/ri/1.8/site/Rake/PackageTask/cdesc-PackageTask.yaml
-  /usr/share/ri/1.8/site/Rake/PackageTask/define-i.yaml
-  /usr/share/ri/1.8/site/Rake/PackageTask/init-i.yaml
-  /usr/share/ri/1.8/site/Rake/PackageTask/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/PackageTask/package_dir_path-i.yaml
-  /usr/share/ri/1.8/site/Rake/PackageTask/package_name-i.yaml
-  /usr/share/ri/1.8/site/Rake/PackageTask/tar_bz2_file-i.yaml
-  /usr/share/ri/1.8/site/Rake/PackageTask/tar_gz_file-i.yaml
-  /usr/share/ri/1.8/site/Rake/PackageTask/tgz_file-i.yaml
-  /usr/share/ri/1.8/site/Rake/PackageTask/zip_file-i.yaml
-  /usr/share/ri/1.8/site/Rake/RDocTask/before_running_rdoc-i.yaml
-  /usr/share/ri/1.8/site/Rake/RDocTask/cdesc-RDocTask.yaml
-  /usr/share/ri/1.8/site/Rake/RDocTask/define-i.yaml
-  /usr/share/ri/1.8/site/Rake/RDocTask/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/RDocTask/option_list-i.yaml
-  /usr/share/ri/1.8/site/Rake/RDocTask/option_string-i.yaml
-  /usr/share/ri/1.8/site/Rake/RDocTask/quote-i.yaml
-  /usr/share/ri/1.8/site/Rake/RepairedSystem/cdesc-RepairedSystem.yaml
-  /usr/share/ri/1.8/site/Rake/RepairedSystem/define_module_function-c.yaml
-  /usr/share/ri/1.8/site/Rake/RubyForgePublisher/cdesc-RubyForgePublisher.yaml
-  /usr/share/ri/1.8/site/Rake/RubyForgePublisher/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/RuleRecursionOverflowError/add_target-i.yaml
-  /usr/share/ri/1.8/site/Rake/RuleRecursionOverflowError/cdesc-RuleRecursionOverflowError.yaml
-  /usr/share/ri/1.8/site/Rake/RuleRecursionOverflowError/message-i.yaml
-  /usr/share/ri/1.8/site/Rake/RuleRecursionOverflowError/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/SshDirPublisher/cdesc-SshDirPublisher.yaml
-  /usr/share/ri/1.8/site/Rake/SshDirPublisher/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/SshDirPublisher/upload-i.yaml
-  /usr/share/ri/1.8/site/Rake/SshFilePublisher/cdesc-SshFilePublisher.yaml
-  /usr/share/ri/1.8/site/Rake/SshFilePublisher/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/SshFilePublisher/upload-i.yaml
-  /usr/share/ri/1.8/site/Rake/SshFreshDirPublisher/cdesc-SshFreshDirPublisher.yaml
-  /usr/share/ri/1.8/site/Rake/SshFreshDirPublisher/upload-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/%5b%5d-c.yaml
-  /usr/share/ri/1.8/site/Rake/Task/add_description-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/arg_names-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/cdesc-Task.yaml
-  /usr/share/ri/1.8/site/Rake/Task/clear-c.yaml
-  /usr/share/ri/1.8/site/Rake/Task/clear-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/clear_actions-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/clear_prerequisites-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/comment%3d-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/create_rule-c.yaml
-  /usr/share/ri/1.8/site/Rake/Task/define_task-c.yaml
-  /usr/share/ri/1.8/site/Rake/Task/enhance-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/execute-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/inspect-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/investigation-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/invoke-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/name-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/needed%3f-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/Task/reenable-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/scope_name-c.yaml
-  /usr/share/ri/1.8/site/Rake/Task/set_arg_names-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/source-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/sources-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/task_defined%3f-c.yaml
-  /usr/share/ri/1.8/site/Rake/Task/tasks-c.yaml
-  /usr/share/ri/1.8/site/Rake/Task/timestamp-i.yaml
-  /usr/share/ri/1.8/site/Rake/Task/to_s-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArgumentError/cdesc-TaskArgumentError.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArguments/%5b%5d-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArguments/cdesc-TaskArguments.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArguments/each-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArguments/inspect-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArguments/lookup-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArguments/method_missing-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArguments/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArguments/new_scope-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArguments/to_hash-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArguments/to_s-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskArguments/with_defaults-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskLib/cdesc-TaskLib.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/%5b%5d-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/cdesc-TaskManager.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/clear-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/create_rule-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/current_scope-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/define_task-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/enhance_with_matching_rule-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/in_namespace-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/intern-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/lookup-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/resolve_args-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/synthesize_file_task-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/tasks-i.yaml
-  /usr/share/ri/1.8/site/Rake/TaskManager/tasks_in_scope-i.yaml
-  /usr/share/ri/1.8/site/Rake/TestTask/cdesc-TestTask.yaml
-  /usr/share/ri/1.8/site/Rake/TestTask/define-i.yaml
-  /usr/share/ri/1.8/site/Rake/TestTask/new-c.yaml
-  /usr/share/ri/1.8/site/Rake/TestTask/test_files%3d-i.yaml
-  /usr/share/ri/1.8/site/Rake/Win32/Win32HomeError/cdesc-Win32HomeError.yaml
-  /usr/share/ri/1.8/site/Rake/Win32/cdesc-Win32.yaml
-  /usr/share/ri/1.8/site/Rake/Win32/normalize-c.yaml
-  /usr/share/ri/1.8/site/Rake/Win32/rake_system-c.yaml
-  /usr/share/ri/1.8/site/Rake/Win32/windows%3f-c.yaml
-  /usr/share/ri/1.8/site/Rake/cdesc-Rake.yaml
-
-------------------
-
 Port Notes:
+
+----- version 0.8.7-1 -----
+Version bump.
 
 ----- version 0.8.4-1 -----
 Initial release for Cygwin 1.7.
