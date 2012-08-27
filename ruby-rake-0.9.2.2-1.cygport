@@ -1,0 +1,8 @@
+inherit rubygem
+
+
+src_install() {
+	cd ${B}
+	rubygem_install
+	doman ${S}/doc/rake.1.gz
+}
