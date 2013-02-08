@@ -1,0 +1,15 @@
+inherit rubygem
+
+NAME="ruby-rake"
+VERSION=0.9.6
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby build system"
+DESCRIPTION="Rake is a Make-like program implemented in Ruby. Tasks and
+dependencies are specified in standard Ruby syntax."
+
+src_install() {
+	cd ${B}
+	rubygem_install
+	doman ${S}/doc/rake.1.gz
+}
