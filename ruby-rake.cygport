@@ -8,6 +8,10 @@ SUMMARY="Ruby build system"
 DESCRIPTION="Rake is a Make-like program implemented in Ruby. Tasks and
 dependencies are specified in standard Ruby syntax."
 
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_rake_CONTENTS="usr/bin/rake ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/} usr/share/man/man1/rake.1*"
+ruby_rake_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
+
 src_install() {
 	cd ${S}
 	rubygem_install
