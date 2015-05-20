@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-rake"
-VERSION=10.3.2
+VERSION=10.4.2
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby build system"
@@ -17,5 +17,5 @@ ruby_rake_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
 src_install() {
 	cd ${S}
 	rubygem_install
-	doman doc/rake.1.gz
+	doman doc/rake.1
 }
